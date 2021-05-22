@@ -26,3 +26,4 @@ public class Snake_ladar {
 		s.dice();
 	}
 }
+
