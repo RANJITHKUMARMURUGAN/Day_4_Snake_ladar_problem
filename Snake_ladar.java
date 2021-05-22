@@ -20,6 +20,12 @@ public class Snake_ladar {
 				System.out.println("your dice shows : "+rollDie_1);
 				System.out.println("your dice shows : "+rollDie_2);
 				System.out.println("you got ladder");
+				if(player1_Position+rollDie_1<=100) {
+					player1_Position=player1_Position+rollDie_1;
+					System.out.println("your dice postion is " +player1_Position);
+				}else {
+					System.out.println("your dice postion is " +player1_Position);
+					break;
 			}
 	public static void main(String[] args) {
 		SnakeLadderDemo s = new SnakeLadderDemo();
