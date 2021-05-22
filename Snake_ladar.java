@@ -27,6 +27,15 @@ public class Snake_ladar {
 					System.out.println("your dice postion is " +player1_Position);
 					break;
 			}
+			count=count+1;
+				if(player1_Position+rollDie_2<=100) {
+					player2_Position=player2_Position+rollDie_2;
+					System.out.println("your dice postion is " +player2_Position);
+				}else {
+					System.out.println("your dice postion is " +player2_Position);
+					break;
+				}
+				break;
 	public static void main(String[] args) {
 		SnakeLadderDemo s = new SnakeLadderDemo();
 		s.dice();
