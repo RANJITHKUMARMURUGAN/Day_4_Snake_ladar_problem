@@ -36,6 +36,23 @@ public class Snake_ladar {
 					break;
 				}
 				break;
+		case snake:
+				System.out.println("you got a snake");
+				player1_Position=player1_Position-rollDie_1;
+				player2_Position=player2_Position-rollDie_2;
+				if(player1_Position<0 || player2_Position<0) {
+					player1_Position=0;
+					player2_Position=0;
+					System.out.println("your dice postion is " +player1_Position);
+					System.out.println("your dice postion is " +player2_Position);
+				}
+				else {
+					System.out.println("your dice postion is " +player1_Position);
+					System.out.println("your dice postion is " +player2_Position);
+				}
+				count=count+1;    
+			}
+		}
 	public static void main(String[] args) {
 		SnakeLadderDemo s = new SnakeLadderDemo();
 		s.dice();
